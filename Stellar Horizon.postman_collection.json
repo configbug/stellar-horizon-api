@@ -1,0 +1,831 @@
+{
+	"info": {
+		"_postman_id": "1a9d4dba-0c5b-45bc-93f0-6198853eca5d",
+		"name": "Stellar Horizon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "All Accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/accounts/",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"accounts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/accounts/{{account_id}}",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"accounts",
+								"{{account_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assets",
+			"item": [
+				{
+					"name": "All Assets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/assets",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"assets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Claimable Balances",
+			"item": [
+				{
+					"name": "All Claimable Balances",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/claimable_balances",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"claimable_balances"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Claimable Balance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/claimable_balances/{{claimable_balance_id}}",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"claimable_balances",
+								"{{claimable_balance_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Effects",
+			"item": [
+				{
+					"name": "All Effects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/effects",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"effects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Effects for Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/accounts/{{account_id}}/effects",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"accounts",
+								"{{account_id}}",
+								"effects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Effects for Ledger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/ledgers/{{ledger}}/effects",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ledgers",
+								"{{ledger}}",
+								"effects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Effects for Operation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/operations/{{operation}}/effects",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"operations",
+								"{{operation}}",
+								"effects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Effects for Transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/transactions/{{transaction}}/effects",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"transactions",
+								"{{transaction}}",
+								"effects"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ledger",
+			"item": [
+				{
+					"name": "All Ledgers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/ledgers",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ledgers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Ledger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/ledgers/{{ledger}}",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ledgers",
+								"{{ledger}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Offers",
+			"item": [
+				{
+					"name": "All Offers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/offers",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"offers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Offer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/offers/{{offer_id}}",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"offers",
+								"{{offer_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Offers for Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/accounts/{{account_id}}/offers",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"accounts",
+								"{{account_id}}",
+								"offers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Operations",
+			"item": [
+				{
+					"name": "All Operations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/operations",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"operations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Operation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/operations/{{operation}}",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"operations",
+								"{{operation}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Operations for Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/accounts/{{account_id}}/operations",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"accounts",
+								"{{account_id}}",
+								"operations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Operations for Ledger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/ledgers/{{ledger}}/operations",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ledgers",
+								"{{ledger}}",
+								"operations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Operations for Transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/transactions/{{transaction}}/operations",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"transactions",
+								"{{transaction}}",
+								"operations"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Order Book",
+			"item": [
+				{
+					"name": "Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/order_book",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"order_book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Paths",
+			"item": [
+				{
+					"name": "Find Payment Paths",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/paths",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paths"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Strict Receive Payment Paths",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/paths/strict-receive",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paths",
+								"strict-receive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Strict Send Payment Paths",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/paths/strict-send",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"paths",
+								"strict-send"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "All Payments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/payments",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payments for Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/accounts/{{account_id}}/payments",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"accounts",
+								"{{account_id}}",
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payments for Ledger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/ledgers/{{ledger}}/payments",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ledgers",
+								"{{ledger}}",
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payments for Transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/transactions/{{transaction}}/payments",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"transactions",
+								"{{transaction}}",
+								"payments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trade Aggregations",
+			"item": [
+				{
+					"name": "Trade Aggregations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/trade_aggregations",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"trade_aggregations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trades",
+			"item": [
+				{
+					"name": "All Trades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/trades",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"trades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Trades for Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/accounts/{{account_id}}/trades",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"accounts",
+								"{{account_id}}",
+								"trades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Trades for Offer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/offers/{{offer_id}}/trades",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"offers",
+								"{{offer_id}}",
+								"trades"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transactions",
+			"item": [
+				{
+					"name": "All Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/transactions",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/transactions/{{transaction}}",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"transactions",
+								"{{transaction}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transactions for Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/accounts/{{account_id}}/transactions",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"accounts",
+								"{{account_id}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transactions for ledger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{host}}/ledgers/{{ledger}}/transactions",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"ledgers",
+								"{{ledger}}",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "horizon-testnet.stellar.org"
+		},
+		{
+			"key": "account_id",
+			"value": "GCRFDHXUR7RWQ6AFD4EKII7WMX552ZRAP2QFMIRBIU73ZX66U3YC2HHM"
+		},
+		{
+			"key": "ledger",
+			"value": ""
+		},
+		{
+			"key": "transaction",
+			"value": ""
+		},
+		{
+			"key": "operation",
+			"value": ""
+		},
+		{
+			"key": "offer_id",
+			"value": ""
+		},
+		{
+			"key": "claimable_balance_id",
+			"value": ""
+		}
+	]
+}
